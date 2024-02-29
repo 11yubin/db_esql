@@ -31,7 +31,7 @@
             echo "Failed to connect to MySQL: " . mysqli_connect_error();
         }
         else { 
-            $con=mysqli_connect("localhost", "root", "dbqlsl2232!", "esql_yubin");
+            $con=mysqli_connect("localhost", "root", "pwd", "esql_yubin");
 
             $result = mysqli_query($con,"SELECT * from community");
             while($row = mysqli_fetch_array($result)) {
